@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with Comments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Blog Form -->
+        <form id="blog">
+            <label for="title">Blog Title:</label>
+            <input type="text" name="title" id="title"/>
+            <label for="author">Blog Author:</label>
+            <input type="text" name="author" id="author"/>
+            <label for="content">Blog Content:</label>
+            <div id="content-wrapper">
+                <textarea id="content" name="content" rows="15" cols="10"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <p>Blog post created successfully</p>
+        </form>
+
+        <!-- Blog Display Box -->
+        <div id="blog-display">
+            <h2 id="display-title"></h2>
+            <p id="display-author"></p>
+            <p id="display-content"></p>
+            
+            <!-- Comment Section -->
+            <h3>Comments</h3>
+            <form id="comment-form">
+                <label for="comment-input">Add a Comment:</label>
+                <input type="text" id="comment-input" placeholder="Write a comment" />
+                <button type="button" id="submit-comment">Play</button>
+            </form>
+            <div id="comments-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>  

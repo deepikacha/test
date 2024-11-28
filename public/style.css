@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container to hold both the form and blog display side by side */
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Form Container */
+#blog {
+    width: 45%;
+    padding: 20px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Display Box */
+#blog-display {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Hide the box initially */
+}
+
+/* Label Styling */
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    color: yellow;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc8800; /* Darker orange */
+}
+
+/* Comments Section */
+#comment-form {
+    margin-top: 20px;
+}
+
+#comment-input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#submit-comment {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #006400;
+}
+
+/* Comment Style */
+#comments-list {
+    margin-top: 20px;
+}
+
+#comments-list div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}                                     
